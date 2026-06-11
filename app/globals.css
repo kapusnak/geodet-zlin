@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --color-accent: #1d6fb8;
+  --color-accent-dark: #15568f;
+  --color-ink: #1e293b;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+section[id] {
+  /* Anchor targets land below the sticky header */
+  scroll-margin-top: 5.5rem;
+}
+
+body {
+  color: var(--color-ink);
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
