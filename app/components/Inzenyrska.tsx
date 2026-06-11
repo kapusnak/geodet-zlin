@@ -23,7 +23,11 @@ export default function Inzenyrska() {
 
         <div className="mt-8 grid items-start gap-10 lg:grid-cols-2">
           <img
-            src="/images/leica-road.png"
+            src="/images/leica-road.webp"
+            srcSet="/images/leica-road-960.webp 960w, /images/leica-road.webp 1920w"
+            sizes="(min-width: 1024px) 576px, 100vw"
+            width={1920}
+            height={820}
             alt="Detail totální stanice Leica při měření komunikace"
             loading="lazy"
             className="order-2 w-full rounded-xl object-cover shadow-md lg:order-1"

@@ -35,9 +35,9 @@ export const metadata: Metadata = {
       "Geodetické práce v katastru nemovitostí a inženýrské geodézii ve Zlíně. Geometrické plány, vytýčení hranic pozemků, poradenství.",
     images: [
       {
-        url: "/images/leica-hero.png",
-        width: 1024,
-        height: 437,
+        url: "/images/leica-hero.jpg",
+        width: 1920,
+        height: 820,
         alt: "Totální stanice Leica na stavbě",
       },
     ],
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     title: "Geodetické práce – Ing. Martin Šmíd | Geodet Zlín",
     description:
       "Geodetické práce v katastru nemovitostí a inženýrské geodézii ve Zlíně.",
-    images: ["/images/leica-hero.png"],
+    images: ["/images/leica-hero.jpg"],
   },
 };
 

@@ -10,8 +10,11 @@ export default function Hero() {
     <section id="uvod" aria-labelledby="uvod-heading" className="relative">
       <div className="absolute inset-0">
         <img
-          src="/images/leica-hero.png"
+          src="/images/leica-hero.webp"
+          srcSet="/images/leica-hero-960.webp 960w, /images/leica-hero.webp 1920w"
+          sizes="100vw"
           alt="Totální stanice Leica s ovládacím panelem na staveništi"
+          fetchPriority="high"
           className="h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-slate-900/75" />

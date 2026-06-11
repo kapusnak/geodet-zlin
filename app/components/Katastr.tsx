@@ -48,7 +48,11 @@ export default function Katastr() {
         </div>
 
         <img
-          src="/images/leica-tripod.png"
+          src="/images/leica-tripod.webp"
+          srcSet="/images/leica-tripod-960.webp 960w, /images/leica-tripod.webp 1920w"
+          sizes="(min-width: 1024px) 576px, 100vw"
+          width={1920}
+          height={820}
           alt="Totální stanice Leica na červeném stativu"
           loading="lazy"
           className="w-full rounded-xl object-cover shadow-md lg:sticky lg:top-28"
