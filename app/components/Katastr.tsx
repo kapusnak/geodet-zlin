@@ -19,7 +19,7 @@ export default function Katastr() {
     >
       <SectionHeading id="katastr-heading">Katastr nemovitostí</SectionHeading>
 
-      <div className="mt-8 grid items-start gap-10 lg:grid-cols-2">
+      <div className="mt-8 grid gap-10 lg:grid-cols-2 lg:items-stretch">
         <div>
           <p className="text-base font-semibold sm:text-lg">
             Práce v katastru nemovitostí:
@@ -47,16 +47,18 @@ export default function Katastr() {
           </p>
         </div>
 
-        <img
-          src="/images/gs18i.webp"
-          srcSet="/images/gs18i-480.webp 480w, /images/gs18i.webp 705w"
-          sizes="(min-width: 1024px) 576px, 100vw"
-          width={705}
-          height={1280}
-          alt="Přijímač Leica GS18 I na výtyčce s kontrolerem CS20"
-          loading="lazy"
-          className="w-full rounded-xl object-cover shadow-md"
-        />
+        <div className="lg:h-full">
+          <img
+            src="/images/gs18i.webp"
+            srcSet="/images/gs18i-480.webp 480w, /images/gs18i.webp 705w"
+            sizes="(min-width: 1024px) 576px, 100vw"
+            width={705}
+            height={1280}
+            alt="Přijímač Leica GS18 I na výtyčce s kontrolerem CS20"
+            loading="lazy"
+            className="h-72 w-full rounded-xl object-cover object-top shadow-md sm:h-96 lg:h-full"
+          />
+        </div>
       </div>
     </section>
   );
