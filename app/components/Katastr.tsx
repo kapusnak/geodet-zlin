@@ -48,14 +48,14 @@ export default function Katastr() {
         </div>
 
         <img
-          src="/images/leica-tripod.webp"
-          srcSet="/images/leica-tripod-960.webp 960w, /images/leica-tripod.webp 1920w"
+          src="/images/gs18i.webp"
+          srcSet="/images/gs18i-480.webp 480w, /images/gs18i.webp 705w"
           sizes="(min-width: 1024px) 576px, 100vw"
-          width={1920}
-          height={820}
-          alt="Totální stanice Leica na červeném stativu"
+          width={705}
+          height={1280}
+          alt="Přijímač Leica GS18 I na výtyčce s kontrolerem CS20"
           loading="lazy"
-          className="w-full rounded-xl object-cover shadow-md lg:sticky lg:top-28"
+          className="w-full rounded-xl object-cover shadow-md"
         />
       </div>
     </section>
