@@ -10,7 +10,8 @@ const navLinks = [
 
 const inquiryFields = [
   "Popis zakázky",
-  "Katastrální území",
+  "Adresa",
+  "KÚ",
   "Číslo parcely",
   "Jméno",
   "Telefon",
@@ -23,6 +24,7 @@ const inquiryMailto =
   "&body=" +
   encodeURIComponent(
     "Stručný popis zakázky:\n\n" +
+      "Adresa:\n" +
       "Katastrální území:\n" +
       "Číslo parcely:\n\n" +
       "Jméno:\n" +
