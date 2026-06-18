@@ -8,6 +8,27 @@ const navLinks = [
   { href: "/#kontakty", label: "Kontakty" },
 ];
 
+const inquiryFields = [
+  "Popis zakázky",
+  "Katastrální území",
+  "Číslo parcely",
+  "Jméno",
+  "Telefon",
+];
+
+const inquiryMailto =
+  "mailto:smid.geodet@seznam.cz" +
+  "?subject=" +
+  encodeURIComponent("Poptávka nové zakázky") +
+  "&body=" +
+  encodeURIComponent(
+    "Stručný popis zakázky:\n\n" +
+      "Katastrální území:\n" +
+      "Číslo parcely:\n\n" +
+      "Jméno:\n" +
+      "Telefon:\n",
+  );
+
 function GlobeIcon() {
   return (
     <svg
@@ -111,6 +132,57 @@ export default function Header() {
               </svg>
             )}
           </button>
+        </div>
+      </div>
+
+      {/* Inquiry strip – integrated into the header */}
+      <div className="border-t border-accent/15 bg-[#e9f2fb]">
+        <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-3 gap-y-1.5 px-4 py-2 sm:px-6">
+          <svg
+            viewBox="0 0 24 24"
+            className="h-4 w-4 shrink-0 text-accent"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+          >
+            <rect x="3" y="5" width="18" height="14" rx="2" />
+            <path d="m3 7 9 6 9-6" />
+          </svg>
+          <p className="text-xs font-semibold text-slate-900 sm:text-sm">
+            Novou zakázku poptávejte e-mailem – uveďte:
+          </p>
+          <ul className="flex flex-wrap items-center gap-1.5">
+            {inquiryFields.map((f) => (
+              <li
+                key={f}
+                className="rounded-full bg-white px-2 py-0.5 text-[11px] font-medium text-accent ring-1 ring-accent/20"
+              >
+                {f}
+              </li>
+            ))}
+          </ul>
+          <a
+            href={inquiryMailto}
+            className="ml-auto inline-flex shrink-0 items-center gap-1.5 rounded-md bg-accent px-3 py-1.5 text-xs font-semibold text-white transition-colors hover:bg-accent-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              className="h-3.5 w-3.5 shrink-0"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <rect x="3" y="5" width="18" height="14" rx="2" />
+              <path d="m3 7 9 6 9-6" />
+            </svg>
+            Napsat e-mail
+          </a>
         </div>
       </div>
 
