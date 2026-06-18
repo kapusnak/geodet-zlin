@@ -17,11 +17,12 @@ export default function Katastr() {
       aria-labelledby="katastr-heading"
       className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-20"
     >
-      <SectionHeading id="katastr-heading">Katastr nemovitostí</SectionHeading>
-
-      <div className="mt-8 grid gap-10 lg:grid-cols-2 lg:items-stretch">
+      <div className="grid gap-10 lg:grid-cols-2 lg:items-start">
         <div>
-          <h3 className="text-lg font-semibold text-slate-900 sm:text-xl">
+          <SectionHeading id="katastr-heading">
+            Katastr nemovitostí
+          </SectionHeading>
+          <h3 className="mt-8 text-lg font-semibold text-slate-900 sm:text-xl">
             Vyhotovení geometrických plánů pro:
           </h3>
           <div className="mt-4">
@@ -44,7 +45,7 @@ export default function Katastr() {
           </p>
         </div>
 
-        <div className="flex justify-center lg:items-center">
+        <div className="flex justify-center">
           <img
             src="/images/gs18i.webp"
             srcSet="/images/gs18i-480.webp 480w, /images/gs18i.webp 705w"
