@@ -22,13 +22,7 @@ export default function Katastr() {
           <SectionHeading id="katastr-heading">
             Katastr nemovitostí
           </SectionHeading>
-          <h3 className="mt-8 text-lg font-semibold text-slate-900 sm:text-xl">
-            Vyhotovení geometrických plánů pro:
-          </h3>
-          <div className="mt-4">
-            <CheckList items={planItems} />
-          </div>
-          <p className="mt-6 flex items-start gap-3 text-base font-semibold leading-relaxed sm:text-lg">
+          <p className="mt-8 flex items-start gap-3 text-base font-semibold leading-relaxed sm:text-lg">
             <svg
               viewBox="0 0 24 24"
               className="mt-1 h-5 w-5 shrink-0 text-accent"
@@ -43,6 +37,12 @@ export default function Katastr() {
             </svg>
             Vytýčení vlastnické hranice pozemku
           </p>
+          <h3 className="mt-8 text-lg font-semibold text-slate-900 sm:text-xl">
+            Vyhotovení geometrických plánů pro:
+          </h3>
+          <div className="mt-4">
+            <CheckList items={planItems} />
+          </div>
         </div>
 
         <div className="flex justify-center">
