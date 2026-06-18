@@ -34,12 +34,7 @@ export default function Inzenyrska() {
           />
 
           <div className="order-1 lg:order-2">
-            <p className="text-base font-semibold sm:text-lg">
-              Inženýrská geodézie:
-            </p>
-            <div className="mt-4">
-              <CheckList items={items} />
-            </div>
+            <CheckList items={items} />
           </div>
         </div>
       </div>

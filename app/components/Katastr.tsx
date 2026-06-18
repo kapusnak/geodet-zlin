@@ -21,10 +21,7 @@ export default function Katastr() {
 
       <div className="mt-8 grid gap-10 lg:grid-cols-2 lg:items-stretch">
         <div>
-          <p className="text-base font-semibold sm:text-lg">
-            Práce v katastru nemovitostí:
-          </p>
-          <h3 className="mt-5 text-lg font-semibold text-slate-900 sm:text-xl">
+          <h3 className="text-lg font-semibold text-slate-900 sm:text-xl">
             Vyhotovení geometrických plánů pro:
           </h3>
           <div className="mt-4">
