@@ -60,10 +60,10 @@ export default function Katastr() {
         <div className="flex justify-center">
           <img
             src="/images/leica-gs18.webp"
-            srcSet="/images/leica-gs18-560.webp 560w, /images/leica-gs18.webp 1120w"
+            srcSet="/images/leica-gs18-560.webp 560w, /images/leica-gs18.webp 768w"
             sizes="(min-width: 1024px) 280px, 60vw"
-            width={1536}
-            height={2788}
+            width={768}
+            height={1394}
             alt="Přijímač Leica GS18 I na výtyčce s kontrolerem CS20"
             loading="lazy"
             className="h-auto w-auto max-h-80 rounded-xl shadow-md sm:max-h-96 lg:max-h-[30rem]"
