@@ -47,16 +47,14 @@ export default function Katastr() {
           </p>
         </div>
 
-        <div className="lg:h-full">
+        <div className="relative h-72 w-full overflow-hidden rounded-xl shadow-md sm:h-96 lg:h-auto">
           <img
             src="/images/gs18i.webp"
             srcSet="/images/gs18i-480.webp 480w, /images/gs18i.webp 705w"
             sizes="(min-width: 1024px) 576px, 100vw"
-            width={705}
-            height={1280}
             alt="Přijímač Leica GS18 I na výtyčce s kontrolerem CS20"
             loading="lazy"
-            className="h-72 w-full rounded-xl object-cover object-top shadow-md sm:h-96 lg:h-full"
+            className="absolute inset-0 h-full w-full object-cover object-top"
           />
         </div>
       </div>
