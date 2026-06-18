@@ -154,9 +154,12 @@ export default function Header() {
             <path d="m3 7 9 6 9-6" />
           </svg>
           <p className="text-xs font-semibold text-slate-900 sm:text-sm">
-            Novou zakázku poptávejte e-mailem – uveďte:
+            <span className="sm:hidden">Poptávka e-mailem</span>
+            <span className="hidden sm:inline">
+              Novou zakázku poptávejte e-mailem – uveďte:
+            </span>
           </p>
-          <ul className="flex flex-wrap items-center gap-1.5">
+          <ul className="hidden flex-wrap items-center gap-1.5 sm:flex">
             {inquiryFields.map((f) => (
               <li
                 key={f}
@@ -209,12 +212,15 @@ export default function Header() {
             ))}
             <li className="p-4">
               <a
-                href="mailto:smid.geodet@seznam.cz"
+                href={inquiryMailto}
                 onClick={() => setOpen(false)}
-                className="block rounded-lg border-2 border-accent px-6 py-3.5 text-center text-lg font-semibold text-accent"
+                className="block rounded-lg bg-accent px-6 py-3.5 text-center text-lg font-semibold text-white active:bg-accent-dark"
               >
                 Napsat e-mail
               </a>
+              <p className="mt-2 text-center text-xs text-slate-500">
+                Uveďte: {inquiryFields.join(" · ")}
+              </p>
             </li>
           </ul>
         </nav>
