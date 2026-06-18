@@ -46,7 +46,35 @@ export default function Hero() {
           </p>
         </div>
 
-        <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:gap-4">
+        <div className="mt-8">
+          <h2 className="text-lg font-semibold text-white sm:text-xl">
+            Nabízíme:
+          </h2>
+          <ul className="mt-4 grid max-w-2xl gap-3 sm:grid-cols-2">
+            {offerItems.map((item) => (
+              <li
+                key={item}
+                className="flex items-start gap-3 rounded-lg bg-white/10 px-4 py-3 text-slate-50"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  className="mt-0.5 h-5 w-5 shrink-0 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M5 13l4 4L19 7" />
+                </svg>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:gap-4">
           <a
             href="tel:+420775986485"
             className="inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-6 py-4 text-lg font-semibold text-white transition-colors hover:bg-accent-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
@@ -80,34 +108,6 @@ export default function Hero() {
             </svg>
             smid.geodet@seznam.cz
           </a>
-        </div>
-
-        <div className="mt-10">
-          <h2 className="text-lg font-semibold text-white sm:text-xl">
-            Nabízíme:
-          </h2>
-          <ul className="mt-4 grid max-w-2xl gap-3 sm:grid-cols-2">
-            {offerItems.map((item) => (
-              <li
-                key={item}
-                className="flex items-start gap-3 rounded-lg bg-white/10 px-4 py-3 text-slate-50"
-              >
-                <svg
-                  viewBox="0 0 24 24"
-                  className="mt-0.5 h-5 w-5 shrink-0 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M5 13l4 4L19 7" />
-                </svg>
-                {item}
-              </li>
-            ))}
-          </ul>
         </div>
       </div>
     </section>
