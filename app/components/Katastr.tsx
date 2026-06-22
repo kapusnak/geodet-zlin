@@ -22,6 +22,24 @@ export default function Katastr() {
           <SectionHeading id="katastr-heading">
             Katastr nemovitostí
           </SectionHeading>
+
+          {/* Mobile: wide banner directly under the heading */}
+          <figure className="group relative mt-6 w-full overflow-hidden rounded-2xl shadow-md ring-1 ring-slate-900/5 lg:hidden">
+            <img
+              src="/images/leica-gs18-horizontal.webp"
+              srcSet="/images/leica-gs18-horizontal-720.webp 720w, /images/leica-gs18-horizontal.webp 1280w"
+              sizes="100vw"
+              width={1417}
+              height={943}
+              alt="Přijímač Leica GS18 I na výtyčce s kontrolerem CS20"
+              loading="lazy"
+              className="aspect-[3/2] w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]"
+            />
+            <figcaption className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-900/70 via-slate-900/15 to-transparent px-4 py-2.5 text-xs font-medium text-white sm:text-sm">
+              Leica GS18 I + CS20 v terénu
+            </figcaption>
+          </figure>
+
           <p className="mt-8 flex items-start gap-3 text-lg font-semibold text-slate-900 sm:text-xl">
             <svg
               viewBox="0 0 24 24"
@@ -57,22 +75,17 @@ export default function Katastr() {
           </div>
         </div>
 
-        <div className="flex justify-center">
-          <figure className="group relative w-full overflow-hidden rounded-2xl shadow-md ring-1 ring-slate-900/5 lg:w-auto">
-            <img
-              src="/images/leica-gs18.webp"
-              srcSet="/images/leica-gs18-560.webp 560w, /images/leica-gs18.webp 1120w"
-              sizes="(min-width: 1024px) 280px, 100vw"
-              width={1534}
-              height={2605}
-              alt="Přijímač Leica GS18 I na výtyčce s kontrolerem CS20"
-              loading="lazy"
-              className="h-56 w-full object-cover object-[center_22%] transition-transform duration-700 ease-out group-hover:scale-105 sm:h-72 lg:h-auto lg:max-h-[30rem] lg:w-auto lg:object-center"
-            />
-            <figcaption className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-900/75 via-slate-900/20 to-transparent px-4 py-3 text-sm font-medium text-white">
-              Leica GS18 I + CS20 v terénu
-            </figcaption>
-          </figure>
+        <div className="hidden justify-center lg:flex">
+          <img
+            src="/images/leica-gs18.webp"
+            srcSet="/images/leica-gs18-560.webp 560w, /images/leica-gs18.webp 1120w"
+            sizes="280px"
+            width={1534}
+            height={2605}
+            alt="Přijímač Leica GS18 I na výtyčce s kontrolerem CS20"
+            loading="lazy"
+            className="h-auto w-auto max-h-[30rem] rounded-2xl shadow-md ring-1 ring-slate-900/5"
+          />
         </div>
       </div>
     </section>
