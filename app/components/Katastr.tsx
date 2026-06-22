@@ -23,23 +23,6 @@ export default function Katastr() {
             Katastr nemovitostí
           </SectionHeading>
 
-          {/* Mobile: wide banner directly under the heading */}
-          <figure className="group relative mt-6 w-full overflow-hidden rounded-2xl shadow-md ring-1 ring-slate-900/5 lg:hidden">
-            <img
-              src="/images/leica-gs18-horizontal.webp"
-              srcSet="/images/leica-gs18-horizontal-720.webp 720w, /images/leica-gs18-horizontal.webp 1280w"
-              sizes="100vw"
-              width={1417}
-              height={943}
-              alt="Přijímač Leica GS18 I na výtyčce s kontrolerem CS20"
-              loading="lazy"
-              className="aspect-[3/2] w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]"
-            />
-            <figcaption className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-900/70 via-slate-900/15 to-transparent px-4 py-2.5 text-xs font-medium text-white sm:text-sm">
-              Leica GS18 I + CS20 v terénu
-            </figcaption>
-          </figure>
-
           <p className="mt-8 flex items-start gap-3 text-lg font-semibold text-slate-900 sm:text-xl">
             <svg
               viewBox="0 0 24 24"
@@ -72,6 +55,19 @@ export default function Katastr() {
           </h3>
           <div className="mt-4">
             <CheckList items={planItems} marker="dot" className="pl-8" />
+          </div>
+
+          <div className="group mt-8 w-full overflow-hidden rounded-2xl shadow-md ring-1 ring-slate-900/5 lg:hidden">
+            <img
+              src="/images/leica-gs18-horizontal.webp"
+              srcSet="/images/leica-gs18-horizontal-720.webp 720w, /images/leica-gs18-horizontal.webp 1280w"
+              sizes="100vw"
+              width={1417}
+              height={943}
+              alt="Přijímač Leica GS18 I na výtyčce s kontrolerem CS20"
+              loading="lazy"
+              className="aspect-[3/2] w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]"
+            />
           </div>
         </div>
 
