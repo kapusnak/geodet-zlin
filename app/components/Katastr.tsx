@@ -58,16 +58,21 @@ export default function Katastr() {
         </div>
 
         <div className="flex justify-center">
-          <img
-            src="/images/leica-gs18.webp"
-            srcSet="/images/leica-gs18-560.webp 560w, /images/leica-gs18.webp 1120w"
-            sizes="(min-width: 1024px) 280px, 60vw"
-            width={1534}
-            height={2605}
-            alt="Přijímač Leica GS18 I na výtyčce s kontrolerem CS20"
-            loading="lazy"
-            className="h-auto w-auto max-h-80 rounded-xl shadow-md sm:max-h-96 lg:max-h-[30rem]"
-          />
+          <figure className="group relative w-full overflow-hidden rounded-2xl shadow-md ring-1 ring-slate-900/5 lg:w-auto">
+            <img
+              src="/images/leica-gs18.webp"
+              srcSet="/images/leica-gs18-560.webp 560w, /images/leica-gs18.webp 1120w"
+              sizes="(min-width: 1024px) 280px, 100vw"
+              width={1534}
+              height={2605}
+              alt="Přijímač Leica GS18 I na výtyčce s kontrolerem CS20"
+              loading="lazy"
+              className="h-56 w-full object-cover object-[center_22%] transition-transform duration-700 ease-out group-hover:scale-105 sm:h-72 lg:h-auto lg:max-h-[30rem] lg:w-auto lg:object-center"
+            />
+            <figcaption className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-900/75 via-slate-900/20 to-transparent px-4 py-3 text-sm font-medium text-white">
+              Leica GS18 I + CS20 v terénu
+            </figcaption>
+          </figure>
         </div>
       </div>
     </section>
