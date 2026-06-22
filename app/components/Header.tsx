@@ -63,7 +63,7 @@ export default function Header() {
         >
           <GlobeIcon />
           <span className="leading-tight">
-            <span className="block text-base font-bold tracking-tight text-slate-900 sm:text-lg">
+            <span className="block whitespace-nowrap text-base font-bold tracking-tight text-slate-900 sm:text-lg">
               Geodetické práce
             </span>
             <span className="block text-xs text-slate-600 sm:text-sm">
@@ -104,7 +104,7 @@ export default function Header() {
           <a
             href="tel:+420775986485"
             aria-label="Zavolat na číslo 775 986 485"
-            className="flex h-12 items-center gap-2 rounded-lg bg-accent px-4 text-sm font-semibold text-white"
+            className="flex h-11 w-11 items-center justify-center rounded-lg bg-accent text-white"
           >
             <svg
               viewBox="0 0 24 24"
@@ -114,7 +114,6 @@ export default function Header() {
             >
               <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.24.2 2.45.57 3.57a1 1 0 0 1-.24 1.02l-2.21 2.2Z" />
             </svg>
-            Zavolat
           </a>
           <button
             type="button"
@@ -122,7 +121,7 @@ export default function Header() {
             aria-expanded={open}
             aria-controls="mobilni-menu"
             aria-label={open ? "Zavřít menu" : "Otevřít menu"}
-            className="flex h-12 w-12 items-center justify-center rounded-lg border border-slate-300 text-slate-700"
+            className="flex h-11 w-11 items-center justify-center rounded-lg border border-slate-300 text-slate-700"
           >
             {open ? (
               <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true">
