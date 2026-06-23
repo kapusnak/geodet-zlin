@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const navLinks = [
   { href: "/#katastr", label: "Katastr nemovitostí" },
@@ -52,6 +52,8 @@ function GlobeIcon() {
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const [menuOverlayTop, setMenuOverlayTop] = useState(0);
+  const headerRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     if (!open) return;
@@ -70,8 +72,32 @@ export default function Header() {
     };
   }, [open]);
 
+  useEffect(() => {
+    if (!open || !headerRef.current) return;
+
+    const updateOverlayTop = () => {
+      if (!headerRef.current) return;
+      setMenuOverlayTop(headerRef.current.getBoundingClientRect().bottom);
+    };
+
+    updateOverlayTop();
+    const observer = new ResizeObserver(updateOverlayTop);
+    observer.observe(headerRef.current);
+    window.addEventListener("resize", updateOverlayTop);
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("resize", updateOverlayTop);
+    };
+  }, [open]);
+
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
+    <header
+      ref={headerRef}
+      className={`sticky top-0 z-50 border-b border-slate-200 ${
+        open ? "bg-white" : "bg-white/95 backdrop-blur"
+      }`}
+    >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-3 px-4 sm:h-20 sm:px-6">
         <a
           href="/"
@@ -210,16 +236,10 @@ export default function Header() {
       {/* Mobile menu – large, simple tap targets */}
       {open && (
         <>
-          <button
-            type="button"
-            aria-label="Zavřít menu"
-            className="fixed inset-0 z-40 bg-slate-900/35 backdrop-blur-md lg:hidden"
-            onClick={() => setOpen(false)}
-          />
           <nav
             id="mobilni-menu"
             aria-label="Mobilní navigace"
-            className="relative z-50 border-t border-slate-200 bg-white shadow-lg lg:hidden"
+            className="border-t border-slate-200 bg-white shadow-lg lg:hidden"
           >
             <ul>
               {navLinks.map((link) => (
@@ -257,6 +277,13 @@ export default function Header() {
               </li>
             </ul>
           </nav>
+          <button
+            type="button"
+            aria-label="Zavřít menu"
+            className="fixed inset-x-0 bottom-0 z-40 bg-slate-900/35 backdrop-blur-md lg:hidden"
+            style={{ top: menuOverlayTop }}
+            onClick={() => setOpen(false)}
+          />
         </>
       )}
     </header>
