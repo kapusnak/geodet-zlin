@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const navLinks = [
   { href: "/#katastr", label: "Katastr nemovitostí" },
@@ -52,6 +52,23 @@ function GlobeIcon() {
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    if (!open) return;
+
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setOpen(false);
+    };
+
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    window.addEventListener("keydown", onKeyDown);
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener("keydown", onKeyDown);
+    };
+  }, [open]);
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
@@ -192,37 +209,55 @@ export default function Header() {
 
       {/* Mobile menu – large, simple tap targets */}
       {open && (
-        <nav
-          id="mobilni-menu"
-          aria-label="Mobilní navigace"
-          className="border-t border-slate-200 bg-white lg:hidden"
-        >
-          <ul>
-            {navLinks.map((link) => (
-              <li key={link.href} className="border-b border-slate-100 last:border-b-0">
+        <>
+          <button
+            type="button"
+            aria-label="Zavřít menu"
+            className="fixed inset-0 z-40 bg-slate-900/35 backdrop-blur-md lg:hidden"
+            onClick={() => setOpen(false)}
+          />
+          <nav
+            id="mobilni-menu"
+            aria-label="Mobilní navigace"
+            className="relative z-50 border-t border-slate-200 bg-white shadow-lg lg:hidden"
+          >
+            <ul>
+              {navLinks.map((link) => (
+                <li key={link.href} className="border-b border-slate-100 last:border-b-0">
+                  <a
+                    href={link.href}
+                    onClick={() => setOpen(false)}
+                    className="block px-6 py-4 text-lg font-medium text-slate-800 active:bg-slate-50"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+              <li className="p-4">
                 <a
-                  href={link.href}
+                  href={inquiryMailto}
                   onClick={() => setOpen(false)}
-                  className="block px-6 py-4 text-lg font-medium text-slate-800 active:bg-slate-50"
+                  className="block rounded-lg bg-accent px-6 py-3.5 text-center text-lg font-semibold text-white active:bg-accent-dark"
                 >
-                  {link.label}
+                  Napsat e-mail
                 </a>
+                <p className="mt-3 text-center text-xs font-medium text-slate-600">
+                  Uveďte v e-mailu:
+                </p>
+                <ul className="mt-2 flex flex-wrap justify-center gap-1.5">
+                  {inquiryFields.map((field) => (
+                    <li
+                      key={field}
+                      className="whitespace-nowrap rounded-full bg-slate-100 px-2.5 py-0.5 text-[11px] font-medium text-slate-600 ring-1 ring-slate-200"
+                    >
+                      {field}
+                    </li>
+                  ))}
+                </ul>
               </li>
-            ))}
-            <li className="p-4">
-              <a
-                href={inquiryMailto}
-                onClick={() => setOpen(false)}
-                className="block rounded-lg bg-accent px-6 py-3.5 text-center text-lg font-semibold text-white active:bg-accent-dark"
-              >
-                Napsat e-mail
-              </a>
-              <p className="mt-2 text-center text-xs text-slate-500">
-                Uveďte: {inquiryFields.join(" · ")}
-              </p>
-            </li>
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        </>
       )}
     </header>
   );
