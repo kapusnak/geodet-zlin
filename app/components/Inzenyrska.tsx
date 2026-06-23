@@ -29,7 +29,7 @@ export default function Inzenyrska() {
               loading="lazy"
               className="w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]"
             />
-            <span className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-accent/35 via-accent/15 to-accent/10 mix-blend-multiply" />
+            <span className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-accent/55 via-accent/30 to-accent/20" />
           </div>
 
           <div className="order-1 lg:order-2">

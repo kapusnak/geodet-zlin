@@ -68,7 +68,7 @@ export default function Katastr() {
               loading="lazy"
               className="aspect-[3/2] w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]"
             />
-            <span className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-accent/35 via-accent/15 to-accent/10 mix-blend-multiply" />
+            <span className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-accent/55 via-accent/30 to-accent/20" />
           </div>
         </div>
 
@@ -84,7 +84,7 @@ export default function Katastr() {
               loading="lazy"
               className="block h-auto w-auto max-h-[30rem] transition-transform duration-700 ease-out group-hover:scale-[1.02]"
             />
-            <span className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-accent/35 via-accent/15 to-accent/10 mix-blend-multiply" />
+            <span className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-accent/55 via-accent/30 to-accent/20" />
           </figure>
         </div>
       </div>
