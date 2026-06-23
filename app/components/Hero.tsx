@@ -18,7 +18,7 @@ export default function Hero() {
           className="h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-slate-900/75" />
-        <div className="absolute inset-0 bg-accent/25" />
+        <div className="absolute inset-0 bg-accent/20" />
       </div>
 
       <div className="relative mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24 lg:py-32">
