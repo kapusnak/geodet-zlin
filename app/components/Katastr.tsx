@@ -66,10 +66,10 @@ export default function Katastr() {
               height={943}
               alt="Přijímač Leica GS18 I na výtyčce s kontrolerem CS20"
               loading="lazy"
-              className="aspect-[3/2] w-full scale-[1.01] object-cover grayscale transition duration-700 ease-out group-hover:scale-105 group-hover:grayscale-0"
+              className="aspect-[3/2] w-full scale-[1.01] object-cover grayscale brightness-110 contrast-90 transition duration-700 ease-out group-hover:scale-105 group-hover:grayscale-0 group-hover:brightness-100 group-hover:contrast-100"
             />
-            <span className="pointer-events-none absolute inset-0 bg-accent/70 mix-blend-color transition-opacity duration-700 ease-out group-hover:opacity-0" />
-            <span className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-accent/30 to-transparent transition-opacity duration-700 ease-out group-hover:opacity-0" />
+            <span className="pointer-events-none absolute inset-0 bg-accent/60 mix-blend-color transition-opacity duration-700 ease-out group-hover:opacity-0" />
+            <span className="pointer-events-none absolute inset-0 bg-white/45 transition-opacity duration-700 ease-out group-hover:opacity-0" />
           </div>
         </div>
 
@@ -83,10 +83,10 @@ export default function Katastr() {
               height={2605}
               alt="Přijímač Leica GS18 I na výtyčce s kontrolerem CS20"
               loading="lazy"
-              className="block h-auto w-auto max-h-[30rem] scale-[1.01] grayscale transition duration-700 ease-out group-hover:scale-105 group-hover:grayscale-0"
+              className="block h-auto w-auto max-h-[30rem] scale-[1.01] grayscale brightness-110 contrast-90 transition duration-700 ease-out group-hover:scale-105 group-hover:grayscale-0 group-hover:brightness-100 group-hover:contrast-100"
             />
-            <span className="pointer-events-none absolute inset-0 bg-accent/70 mix-blend-color transition-opacity duration-700 ease-out group-hover:opacity-0" />
-            <span className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-accent/30 to-transparent transition-opacity duration-700 ease-out group-hover:opacity-0" />
+            <span className="pointer-events-none absolute inset-0 bg-accent/60 mix-blend-color transition-opacity duration-700 ease-out group-hover:opacity-0" />
+            <span className="pointer-events-none absolute inset-0 bg-white/45 transition-opacity duration-700 ease-out group-hover:opacity-0" />
           </figure>
         </div>
       </div>

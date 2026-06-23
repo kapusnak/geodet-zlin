@@ -27,10 +27,10 @@ export default function Inzenyrska() {
               height={820}
               alt="Detail totální stanice Leica při měření komunikace"
               loading="lazy"
-              className="w-full scale-[1.01] object-cover grayscale transition duration-700 ease-out group-hover:scale-105 group-hover:grayscale-0"
+              className="w-full scale-[1.01] object-cover grayscale brightness-110 contrast-90 transition duration-700 ease-out group-hover:scale-105 group-hover:grayscale-0 group-hover:brightness-100 group-hover:contrast-100"
             />
-            <span className="pointer-events-none absolute inset-0 bg-accent/70 mix-blend-color transition-opacity duration-700 ease-out group-hover:opacity-0" />
-            <span className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-accent/30 to-transparent transition-opacity duration-700 ease-out group-hover:opacity-0" />
+            <span className="pointer-events-none absolute inset-0 bg-accent/60 mix-blend-color transition-opacity duration-700 ease-out group-hover:opacity-0" />
+            <span className="pointer-events-none absolute inset-0 bg-white/45 transition-opacity duration-700 ease-out group-hover:opacity-0" />
           </div>
 
           <div className="order-1 lg:order-2">
