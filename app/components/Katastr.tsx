@@ -71,7 +71,7 @@ export default function Katastr() {
           </div>
         </div>
 
-        <div className="hidden justify-center lg:flex">
+        <div className="group hidden justify-center overflow-hidden rounded-2xl shadow-md ring-1 ring-slate-900/5 lg:flex">
           <img
             src="/images/leica-gs18.webp"
             srcSet="/images/leica-gs18-560.webp 560w, /images/leica-gs18.webp 1120w"
@@ -80,7 +80,7 @@ export default function Katastr() {
             height={2605}
             alt="Přijímač Leica GS18 I na výtyčce s kontrolerem CS20"
             loading="lazy"
-            className="h-auto w-auto max-h-[30rem] rounded-2xl shadow-md ring-1 ring-slate-900/5"
+            className="h-auto w-auto max-h-[30rem] transition-transform duration-700 ease-out group-hover:scale-[1.02]"
           />
         </div>
       </div>
