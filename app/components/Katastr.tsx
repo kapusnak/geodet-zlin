@@ -57,7 +57,7 @@ export default function Katastr() {
             <CheckList items={planItems} marker="dot" className="pl-8" />
           </div>
 
-          <div className="group relative mt-8 w-full overflow-hidden rounded-2xl shadow-md ring-1 ring-slate-900/5 lg:hidden">
+          <div className="group relative isolate mt-8 w-full overflow-hidden rounded-2xl shadow-md ring-1 ring-slate-900/5 lg:hidden">
             <img
               src="/images/leica-gs18-horizontal.webp"
               srcSet="/images/leica-gs18-horizontal-720.webp 720w, /images/leica-gs18-horizontal.webp 1280w"
@@ -66,14 +66,15 @@ export default function Katastr() {
               height={943}
               alt="Přijímač Leica GS18 I na výtyčce s kontrolerem CS20"
               loading="lazy"
-              className="aspect-[3/2] w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]"
+              className="aspect-[3/2] w-full scale-[1.01] object-cover grayscale transition duration-700 ease-out group-hover:scale-105 group-hover:grayscale-0"
             />
-            <span className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-accent/55 via-accent/30 to-accent/20" />
+            <span className="pointer-events-none absolute inset-0 bg-accent/70 mix-blend-color transition-opacity duration-700 ease-out group-hover:opacity-0" />
+            <span className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-accent/30 to-transparent transition-opacity duration-700 ease-out group-hover:opacity-0" />
           </div>
         </div>
 
         <div className="hidden justify-center lg:flex">
-          <figure className="group relative overflow-hidden rounded-2xl shadow-md ring-1 ring-slate-900/5">
+          <figure className="group relative isolate overflow-hidden rounded-2xl shadow-md ring-1 ring-slate-900/5">
             <img
               src="/images/leica-gs18.webp"
               srcSet="/images/leica-gs18-560.webp 560w, /images/leica-gs18.webp 1120w"
@@ -82,9 +83,10 @@ export default function Katastr() {
               height={2605}
               alt="Přijímač Leica GS18 I na výtyčce s kontrolerem CS20"
               loading="lazy"
-              className="block h-auto w-auto max-h-[30rem] transition-transform duration-700 ease-out group-hover:scale-[1.02]"
+              className="block h-auto w-auto max-h-[30rem] scale-[1.01] grayscale transition duration-700 ease-out group-hover:scale-105 group-hover:grayscale-0"
             />
-            <span className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-accent/55 via-accent/30 to-accent/20" />
+            <span className="pointer-events-none absolute inset-0 bg-accent/70 mix-blend-color transition-opacity duration-700 ease-out group-hover:opacity-0" />
+            <span className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-accent/30 to-transparent transition-opacity duration-700 ease-out group-hover:opacity-0" />
           </figure>
         </div>
       </div>

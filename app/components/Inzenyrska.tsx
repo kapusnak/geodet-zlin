@@ -18,7 +18,7 @@ export default function Inzenyrska() {
     >
       <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-20">
         <div className="grid items-start gap-10 lg:grid-cols-2">
-          <div className="group relative order-2 overflow-hidden rounded-xl shadow-md ring-1 ring-slate-900/5 lg:order-1">
+          <div className="group relative isolate order-2 overflow-hidden rounded-xl shadow-md ring-1 ring-slate-900/5 lg:order-1">
             <img
               src="/images/leica-road.webp"
               srcSet="/images/leica-road-960.webp 960w, /images/leica-road.webp 1920w"
@@ -27,9 +27,10 @@ export default function Inzenyrska() {
               height={820}
               alt="Detail totální stanice Leica při měření komunikace"
               loading="lazy"
-              className="w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]"
+              className="w-full scale-[1.01] object-cover grayscale transition duration-700 ease-out group-hover:scale-105 group-hover:grayscale-0"
             />
-            <span className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-accent/55 via-accent/30 to-accent/20" />
+            <span className="pointer-events-none absolute inset-0 bg-accent/70 mix-blend-color transition-opacity duration-700 ease-out group-hover:opacity-0" />
+            <span className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-accent/30 to-transparent transition-opacity duration-700 ease-out group-hover:opacity-0" />
           </div>
 
           <div className="order-1 lg:order-2">
