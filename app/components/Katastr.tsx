@@ -36,7 +36,7 @@ export default function Katastr() {
             >
               <path d="M5 13l4 4L19 7" />
             </svg>
-            Vytýčení vlastnické hranice pozemku
+            Vytyčení vlastnické hranice pozemku
           </p>
           <h3 className="mt-8 flex items-start gap-3 text-lg font-semibold text-slate-900 sm:text-xl">
             <svg

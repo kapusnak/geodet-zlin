@@ -12,14 +12,14 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.geodet-zlin.cz"),
   title: "Geodetické práce – Ing. Martin Šmíd | Geodet Zlín",
   description:
-    "Geodetické práce ve Zlíně – katastr nemovitostí, inženýrská geodézie, vyhotovení geometrických plánů, vytýčení hranic pozemků a poradenství. Ing. Martin Šmíd, Zlín.",
+    "Geodetické práce ve Zlíně – katastr nemovitostí, inženýrská geodézie, vyhotovení geometrických plánů, vytyčení hranic pozemků a poradenství. Ing. Martin Šmíd, Zlín.",
   keywords: [
     "geodet Zlín",
     "geodetické práce",
     "katastr nemovitostí",
     "inženýrská geodézie",
     "geometrický plán",
-    "vytýčení hranice pozemku",
+    "vytyčení hranice pozemku",
   ],
   robots: {
     index: true,
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     siteName: "Geodetické práce – Ing. Martin Šmíd",
     title: "Geodetické práce – Ing. Martin Šmíd | Geodet Zlín",
     description:
-      "Geodetické práce v katastru nemovitostí a inženýrské geodézii ve Zlíně. Geometrické plány, vytýčení hranic pozemků, poradenství.",
+      "Geodetické práce v katastru nemovitostí a inženýrské geodézii ve Zlíně. Geometrické plány, vytyčení hranic pozemků, poradenství.",
     images: [
       {
         url: "/images/leica-hero.jpg",

@@ -3,7 +3,7 @@ import CheckList from "./CheckList";
 
 const items = [
   "vyhotovení účelové mapy jako podklad pro projektování",
-  "vytýčení budov, komunikací a sítí dle projektu",
+  "vytyčení budov, komunikací a sítí dle projektu",
   "zaměření skutečného provedení – budov, komunikací, inženýrských sítí (vodovod, kanalizace, telefonní a elektrorozvody apod.)",
   "passporty budov",
   "zaměření jeřábových drah",

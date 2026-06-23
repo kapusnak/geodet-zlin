@@ -1,6 +1,6 @@
 const offerItems = [
   "vyhotovení geometrických plánů",
-  "vytýčení vlastnické hranice pozemku",
+  "vytyčení vlastnické hranice pozemku",
   "inženýrská geodézie",
   "poradenství",
 ];
