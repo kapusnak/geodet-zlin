@@ -36,7 +36,7 @@ export default function Kontakty() {
             </div>
           </div>
 
-          <div className="grid gap-4 sm:grid-cols-2">
+          <div className="grid gap-4">
             <a
               href="tel:+420775986485"
               className="group flex items-start gap-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:border-accent hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
@@ -82,7 +82,7 @@ export default function Kontakty() {
                 <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
                   E-mail
                 </p>
-                <p className="mt-1 truncate font-semibold text-slate-900">
+                <p className="mt-1 break-all font-semibold text-slate-900">
                   smid.geodet@seznam.cz
                 </p>
               </div>
