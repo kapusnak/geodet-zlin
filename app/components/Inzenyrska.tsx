@@ -18,7 +18,7 @@ export default function Inzenyrska() {
     >
       <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-20">
         <div className="grid items-start gap-10 lg:grid-cols-2">
-          <div className="group order-2 overflow-hidden rounded-xl shadow-md ring-1 ring-slate-900/5 lg:order-1">
+          <div className="group relative order-2 overflow-hidden rounded-xl shadow-md ring-1 ring-slate-900/5 lg:order-1">
             <img
               src="/images/leica-road.webp"
               srcSet="/images/leica-road-960.webp 960w, /images/leica-road.webp 1920w"
@@ -29,6 +29,7 @@ export default function Inzenyrska() {
               loading="lazy"
               className="w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]"
             />
+            <span className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-accent/35 via-accent/15 to-accent/10 mix-blend-multiply" />
           </div>
 
           <div className="order-1 lg:order-2">

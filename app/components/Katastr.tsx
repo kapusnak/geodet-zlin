@@ -57,7 +57,7 @@ export default function Katastr() {
             <CheckList items={planItems} marker="dot" className="pl-8" />
           </div>
 
-          <div className="group mt-8 w-full overflow-hidden rounded-2xl shadow-md ring-1 ring-slate-900/5 lg:hidden">
+          <div className="group relative mt-8 w-full overflow-hidden rounded-2xl shadow-md ring-1 ring-slate-900/5 lg:hidden">
             <img
               src="/images/leica-gs18-horizontal.webp"
               srcSet="/images/leica-gs18-horizontal-720.webp 720w, /images/leica-gs18-horizontal.webp 1280w"
@@ -68,20 +68,24 @@ export default function Katastr() {
               loading="lazy"
               className="aspect-[3/2] w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]"
             />
+            <span className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-accent/35 via-accent/15 to-accent/10 mix-blend-multiply" />
           </div>
         </div>
 
-        <div className="group hidden justify-center overflow-hidden rounded-2xl shadow-md ring-1 ring-slate-900/5 lg:flex">
-          <img
-            src="/images/leica-gs18.webp"
-            srcSet="/images/leica-gs18-560.webp 560w, /images/leica-gs18.webp 1120w"
-            sizes="280px"
-            width={1534}
-            height={2605}
-            alt="Přijímač Leica GS18 I na výtyčce s kontrolerem CS20"
-            loading="lazy"
-            className="h-auto w-auto max-h-[30rem] transition-transform duration-700 ease-out group-hover:scale-[1.02]"
-          />
+        <div className="hidden justify-center lg:flex">
+          <figure className="group relative overflow-hidden rounded-2xl shadow-md ring-1 ring-slate-900/5">
+            <img
+              src="/images/leica-gs18.webp"
+              srcSet="/images/leica-gs18-560.webp 560w, /images/leica-gs18.webp 1120w"
+              sizes="280px"
+              width={1534}
+              height={2605}
+              alt="Přijímač Leica GS18 I na výtyčce s kontrolerem CS20"
+              loading="lazy"
+              className="block h-auto w-auto max-h-[30rem] transition-transform duration-700 ease-out group-hover:scale-[1.02]"
+            />
+            <span className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-accent/35 via-accent/15 to-accent/10 mix-blend-multiply" />
+          </figure>
         </div>
       </div>
     </section>
