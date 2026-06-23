@@ -55,7 +55,7 @@ export default function Kontakty() {
                 <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
                   Telefon
                 </p>
-                <p className="mt-1 font-semibold text-slate-900">775 986 485</p>
+                <p className="mt-1 font-semibold text-slate-900">+420 775 986 485</p>
               </div>
             </a>
 
