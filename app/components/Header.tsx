@@ -13,8 +13,8 @@ const inquiryFields = [
   "Adresa",
   "KÚ",
   "Číslo parcely",
-  "Jméno",
-  "Telefon",
+  "Vaše jméno",
+  "Váš telefon",
 ];
 
 const inquiryMailto =
