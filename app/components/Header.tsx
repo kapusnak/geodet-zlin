@@ -255,9 +255,24 @@ export default function Header() {
               ))}
               <li className="p-4">
                 <a
+                  href="tel:+420775986485"
+                  onClick={() => setOpen(false)}
+                  className="flex items-center justify-center gap-2 rounded-lg border-2 border-accent bg-white px-6 py-3.5 text-lg font-semibold text-accent active:bg-slate-50"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    className="h-5 w-5 shrink-0"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.24.2 2.45.57 3.57a1 1 0 0 1-.24 1.02l-2.21 2.2Z" />
+                  </svg>
+                  +420 775 986 485
+                </a>
+                <a
                   href={inquiryMailto}
                   onClick={() => setOpen(false)}
-                  className="block rounded-lg bg-accent px-6 py-3.5 text-center text-lg font-semibold text-white active:bg-accent-dark"
+                  className="mt-3 block rounded-lg bg-accent px-6 py-3.5 text-center text-lg font-semibold text-white active:bg-accent-dark"
                 >
                   Napsat e-mail
                 </a>
