@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { Inter } from "next/font/google";
 import "./globals.css";
+
+const GOOGLE_TAG_ID = "G-43E92WS8LB";
 
 const inter = Inter({
   subsets: ["latin", "latin-ext"],
@@ -86,6 +89,7 @@ export default function RootLayout({
         />
         {children}
       </body>
+      <GoogleAnalytics gaId={GOOGLE_TAG_ID} />
     </html>
   );
 }
